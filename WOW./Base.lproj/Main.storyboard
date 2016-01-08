@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Klt-Jf-IXt">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="LZA-PH-s9e">
-            <objects>
-                <navigationController id="2Fb-Wb-5aK" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Js1-c8-Wk5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sdw-sS-ob0"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KXn-7r-RWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-558" y="408"/>
-        </scene>
-        <!--Welcome-->
+        <!--Many Welcome!-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WOW_" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,8 +24,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0w-LU-y8s">
-                                <rect key="frame" x="623" y="102" width="135" height="50"/>
-                                <state key="normal" image="calculator"/>
+                                <rect key="frame" x="611" y="102" width="147" height="50"/>
+                                <state key="normal" image="calculator">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="X2L-AI-gjE" kind="show" id="Tzs-kd-eDW"/>
                                 </connections>
@@ -66,12 +51,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Welcome" id="6uI-kH-T4D"/>
+                    <navigationItem key="navigationItem" title="Many Welcome!" id="6uI-kH-T4D"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="300" y="408"/>
+            <point key="canvasLocation" x="1112" y="408"/>
         </scene>
         <!--Calculator-->
         <scene sceneID="TwA-p7-QQR">
@@ -95,24 +80,54 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Addition" translatesAutoresizingMaskIntoConstraints="NO" id="dzX-0G-bQh">
-                                <rect key="frame" x="205" y="104" width="337" height="163"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ibB-9A-4q1">
+                                <rect key="frame" x="323" y="332" width="100" height="100"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Plus" translatesAutoresizingMaskIntoConstraints="NO" id="ibB-9A-4q1">
-                                <rect key="frame" x="334" y="342" width="100" height="100"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="equals" translatesAutoresizingMaskIntoConstraints="NO" id="osL-eV-jcJ">
-                                <rect key="frame" x="334" y="506" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="=" translatesAutoresizingMaskIntoConstraints="NO" id="osL-eV-jcJ">
+                                <rect key="frame" x="323" y="508" width="100" height="100"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbo-O2-ZRd">
-                                <rect key="frame" x="262" y="895" width="222" height="70"/>
-                                <state key="normal" image="add"/>
+                                <rect key="frame" x="67" y="143" width="102" height="70"/>
+                                <state key="normal" image="Add"/>
                                 <connections>
                                     <action selector="addButton:" destination="X2L-AI-gjE" eventType="touchUpInside" id="uj4-Ed-K0M"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="?????" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFP-Ou-w9w">
-                                <rect key="frame" x="352" y="646" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="?????" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFP-Ou-w9w">
+                                <rect key="frame" x="352" y="647" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkK-Af-jIY">
+                                <rect key="frame" x="561" y="150" width="124" height="56"/>
+                                <state key="normal" image="Subtract"/>
+                                <connections>
+                                    <action selector="subtractButton:" destination="X2L-AI-gjE" eventType="touchUpInside" id="nkT-X8-A6L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJq-WV-n5G">
+                                <rect key="frame" x="57" y="700" width="123" height="58"/>
+                                <state key="normal" image="Multiply"/>
+                                <connections>
+                                    <action selector="multiplyButton:" destination="X2L-AI-gjE" eventType="touchUpInside" id="RMk-zQ-AgP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyc-7i-yDz">
+                                <rect key="frame" x="576" y="701" width="95" height="56"/>
+                                <state key="normal" image="Devide"/>
+                                <connections>
+                                    <action selector="devideButton:" destination="X2L-AI-gjE" eventType="touchUpInside" id="d0S-uW-YlQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EO4-RK-X3h">
+                                <rect key="frame" x="333" y="700" width="80" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsC-Pf-3bU">
+                                <rect key="frame" x="336" y="855" width="74" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -120,22 +135,48 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Calculator" id="hai-OF-T6T">
+                        <barButtonItem key="backBarButtonItem" title="verry returning" id="Srd-4s-a6X"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="answerLabel" destination="bFP-Ou-w9w" id="xO7-Fy-wuZ"/>
+                        <outlet property="answerLabel" destination="bFP-Ou-w9w" id="TLI-aB-gnt"/>
+                        <outlet property="devideByZeroErrorLabel" destination="hsC-Pf-3bU" id="5vk-nB-fJz"/>
                         <outlet property="firstNumberTextField" destination="g7A-Rd-84R" id="yOL-p9-Ae1"/>
+                        <outlet property="opperaterImageView" destination="ibB-9A-4q1" id="192-8d-v2W"/>
+                        <outlet property="remainderLabel" destination="EO4-RK-X3h" id="HCa-Fz-csY"/>
                         <outlet property="secondNumberTextField" destination="Bgi-D5-l98" id="b0G-9D-joT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGm-hK-dIO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="-648"/>
+            <point key="canvasLocation" x="1882" y="-648"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WH2-p4-o9g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Klt-Jf-IXt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NmG-tk-l9O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vNB-T6-D3k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwZ-Mp-cpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="408"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Addition" width="487" height="176"/>
-        <image name="Plus" width="75" height="76"/>
-        <image name="add" width="86" height="50"/>
+        <image name="=" width="99" height="97"/>
+        <image name="Add" width="63" height="57"/>
+        <image name="Devide" width="95" height="56"/>
+        <image name="Multiply" width="123" height="58"/>
+        <image name="Subtract" width="124" height="56"/>
         <image name="calculator" width="135" height="50"/>
-        <image name="equals" width="76" height="71"/>
     </resources>
 </document>
